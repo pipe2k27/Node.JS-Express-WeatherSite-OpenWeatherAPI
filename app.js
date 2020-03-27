@@ -8,7 +8,8 @@ const app = express();
 
 app.get("/", function(req, res) {
 
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=buenos aires&appid=88955fcb41de59dfa20bdf62950678b9&units=metric";
+  var city = "paris";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=88955fcb41de59dfa20bdf62950678b9&units=metric";
 
   https.get(url, function(response) {
     console.log(response.statusCode);
@@ -16,10 +17,10 @@ app.get("/", function(req, res) {
     response.on("data", function(data) {
       const weatherData = JSON.parse(data);
       var icon = weatherData.weather[0].icon;
-      var iconURL = "http://openweathermap.org/img/wn/"+ icon +"@2x.png";
-      var clima = "The temperature in buenos aires is: " + weatherData.main.temp + " degrees celcius and the weather is: " + weatherData.weather[0].description;
+      var iconURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      var clima = "The temperature in "+ city +"  is: " + weatherData.main.temp + " degrees celcius and the weather is: " + weatherData.weather[0].description;
       res.write("<h1>" + clima + "</h1>");
-      res.write("<img src='" + iconURL+ "'/>");
+      res.write("<img src='" + iconURL + "'/>");
       res.send();
 
     });
