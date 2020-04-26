@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -6,7 +7,7 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Merriweather+Sans|Raleway|Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Merriweather+Sans|Raleway|Source+Code+Pro|Bungee|Titillium+Web&display=swap" rel="stylesheet">
   <!-- bootsrap java -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -20,18 +21,54 @@
 </head>
 
 <body>
-
-  <form action="/" method="post">
-    <label for="cityInput">Your City:</label>
-    <input id="cityInput" type="text" name="cityName">
-    <button type="submit">Go!</button>
-  </form>
-
-
+  <img src="images/cloud.png" class="cloud c1" alt="">
+  <img src="images/cloud.png" class="cloud c2" alt="">
+  <img src="images/cloud.png" class="cloud c3" alt="">
+  <img src="images/cloud.png" class="cloud c4" alt="">
+  <img src="images/sun.png" class="sun" alt="">
+  <img src="images/storm.png" class="storm" alt="">
 
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script> -->
+
+  <img src="images/toro-logo-white.png" class="logo" alt="">
+
+  <div class="choose">
+    <div class="title">
+      <h3 class="title2">Choose your city!!</h3>
+      <p class="info"><i>and get weather info</i></p>
+    </div>
+    <div class="buttons">
+      <form class="" action="/bue" method="post">
+          <button type="submit" class="button buenos">Buenos Aires</button>
+        </form>
+      <form class="" action="/lon" method="post">
+          <button type="submit" class="button london">London</button>
+        </form>
+      <form class="" action="/par" method="post">
+          <button type="submit" class="button paris">Paris</button>
+        </form>
+    <form class="" action="/new" method="post">
+        <button type="submit" class="button new-york">New York</button>
+      </form>
+
+    </div>
+    <div class="content-choose">
+      <form class="city-choose" action="/" method="post">
+        <label for="cityInput" class="label">Other City:</label>
+        <input id="cityInput" type="text" name="cityName" class="input">
+        <button type="submit" class="go  btn btn-danger"><i>Go!</i></button>
+      </form>
+      <p class="copywright">©Site created by Felipe Perarnau</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

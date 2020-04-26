@@ -1,0 +1,210 @@
+body {
+  background-color: #9adcf4;
+  text-align: center;
+  font-family: "bungee";
+  color: WHITE;
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sm {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.md {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon2{
+  width:200px;
+  transition: width 800ms, top 800ms;
+}
+
+.icon2.move{
+  width:192px;
+
+}
+
+
+.temp {
+  font-size: 3rem;
+}
+
+.square {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  width: 400px;
+  max-width: 95%;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  max-width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+
+.in-box {
+  /* max-width: 399px; */  width: 87%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.place {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.weather {
+  font-size: 1.5rem;
+}
+
+.temp {
+  font-size: 2.5rem;
+}
+
+.rest {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.logo{
+  width: 150px;
+  position: relative;
+  bottom: 10px;
+  max-width: 40%;
+}
+
+.smaller-font{
+  font-size: 1.3rem;
+}
+
+
+@media (max-width:450px) {
+  .place {
+    font-size: 6.8vw;
+  }
+
+  .weather {
+    font-size: 5.3vw;
+  }
+
+  .temp {
+    font-size: 7.9vw;
+  }
+
+  .rest {
+    font-size: 3.9vw;
+  }
+
+  .in-box {
+    top: 20px;
+  }
+
+  .icon {
+    width: 180px;
+    height: 180px;
+  }
+  .icon2{
+    width: 180px;
+  }
+  .icon2.move{
+    width:173px;
+
+  }
+
+  .logo{
+    bottom: -5px;
+}
+.smaller-font{
+  font-size: 1rem;
+}
+
+
+}
+
+
+@media (max-width:350px) {
+  .logo{
+    bottom: 15px;
+}
+
+}
+
+@media (max-width:320px) {
+  .icon {
+    width: 150px;
+    height: 150px;
+  }
+  .smaller-font{
+    font-size: 0.8rem;
+  }
+
+  .icon2{
+    width: 150px;
+  }
+  .icon2.move{
+    width:144px;
+
+  }
+  .in-box {
+    top: 40px;
+  }
+  .logo{
+    bottom: 15px;
+}
+
+}
+
+.back {
+  position: absolute;
+  top: 670px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width:380px) {
+  .back {
+    top: 603px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:340px) {
+  .back {
+    top: 519px;
+  }
+
+  .box {
+    top: 0;
+  }
+}

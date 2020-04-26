@@ -1,0 +1,235 @@
+body {
+  background-color: #9adcf4;
+  text-align: center;
+}
+
+/* clouds */
+.cloud {
+  width: 200px;
+  max-width: 17%;
+  position: absolute;
+  transition: transform 1600ms;
+}
+
+.c1 {
+  left: 10%;
+  top: 150px;
+}
+
+.c2 {
+  left: 70%;
+  top: 80px;;
+}
+
+.c3 {
+  right: 70%;
+  top: 440px;
+}
+
+.c4 {
+  right: 5%;
+  top: 479px;
+}
+
+.c2.move, .c3.move {
+  transform: translateX(20%);
+}
+
+.c1.move, .c4.move {
+  transform: translateX(-20%);
+}
+
+.sun {
+  width: 250px;
+  max-width: 20%;
+  position: absolute;
+  left: 80%;
+  top: 335px;
+  transform: translate(-50%, -50%);
+}
+
+.storm {
+  width: 250px;
+  max-width: 20%;
+  position: absolute;
+  right: 80%;
+  top: 370px;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width:1070px) {
+  .storm {
+    right: 90%;
+  }
+
+  .sun {
+    left: 90%;
+  }
+
+  .c2 {
+    top: 200px;
+  }
+}
+
+@media (max-width:800px) {
+  .c1 {
+    left: 5%;
+  }
+
+  .c2 {
+    left: 75%;
+    top: 250px;
+  }
+
+  .c3 {
+    right: 75%;
+  }
+
+  .c4 {
+    right: 5%;
+  }
+}
+
+@media (max-width:664px) {
+  .storm {
+    top: 615px;
+    right: 30%;
+    width: 130px;
+    max-width: 150px;
+  }
+
+  .sun {
+    top: 602px;
+    left: 30%;
+    width: 130px;
+    max-width: 150px;
+  }
+
+  .c1 {
+    top: 670px;
+    left: 5%;
+  }
+
+  .c2 {
+    left: 75%;
+    top: 650px;;
+  }
+
+  .c3 {
+    right: 75%;
+    top: 520px;
+  }
+
+  .c4 {
+    right: 22%;
+    top: 515px;
+  }
+}
+
+/* css */
+.title {
+  padding: 2%;
+}
+@media (max-width:354px) {
+
+  .title2 {
+    font-size: 1.4rem;
+  }
+
+}
+.choose {
+  margin: 2% 0;
+  position: relative;
+  width: 400px;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 5%;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "bungee";
+  box-shadow: 10px 10px 10px #6492a3;
+}
+
+.logo {
+  width: 600px;
+  max-width: 100%;
+}
+
+.content-choose {
+  position: relative;
+  max-width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  border-radius: 10px;
+  max-width: 90%;
+  width: 90%;
+  position: relative;
+  color: white;
+  height: 35px;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.button:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+.buenos {
+  background-color: #2d132c;
+}
+
+.paris {
+  background-color: #c72c41;
+}
+
+.london {
+  background-color: #801336;
+}
+
+.new-york {
+  background-color: #ee4540;
+}
+
+.city-choose{
+  width: 100%;
+}
+.label{
+}
+.input{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.go{
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.copywright{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: grey;
+  font-family: "raleway";
+  margin-top: 10px;
+  font-size: 0.8rem;
+  bottom:3px;
+
+}
+
+
+.info{
+  margin-bottom: 5px;
+  color: darkgrey;
+}
+
+.title{
+  padding-bottom: 0;
+}

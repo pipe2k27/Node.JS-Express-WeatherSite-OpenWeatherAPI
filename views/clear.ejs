@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Merriweather+Sans|Raleway|Source+Code+Pro|Bungee|Cairo:600|Exo+2:600|Hind+Siliguri:500&display=swap" rel="stylesheet">
+  <!-- bootsrap java -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/4bad990581.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="styles2.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+<!-- code for day -->
+
+<% if(wcode==800 && ncode=="d" || wcode==801 && ncode=="d" || wcode==802 && ncode=="d" || wcode==803 && ncode=="d"){%>
+
+<img src="/images/Back-gr/bg-day-big.jpg" class="bg" alt="">
+<img src="/images/Back-gr/bg-day-md.jpg" class="md" alt="">
+<img src="/images/Back-gr/bg-day-sm.jpg" class="sm" alt="">
+
+
+<%}%>
+<!-- code for night -->
+<% if(wcode==800 && ncode=="n" || wcode==801 && ncode=="n" || wcode==802 && ncode=="n" || wcode==803 && ncode=="n"){%>
+<img src="/images/Back-gr/bg-night-big.jpg" class="bg" alt="">
+<img src="/images/Back-gr/bg-night-md.jpg" class="md" alt="">
+<img src="/images/Back-gr/bg-night-sm.jpg" class="sm" alt="">
+
+<%}%>
+<!-- code for clouds -->
+<% if( wcode==804 || wcode<782){ %>
+<img src="/images/Back-gr/bg-cloudy-big.jpg" class="bg" alt="">
+<img src="/images/Back-gr/bg-cloudy-md.jpg" class="md" alt="">
+<img src="/images/Back-gr/bg-cloudy-sm.jpg" class="sm" alt="">
+
+<%}%>
+
+
+<div class="box">
+  <img src="images/square.png" class="square" alt="">
+<div class="in-box">
+  <!-- smal icons -->
+  <div class="icon">
+    <% if(wcode==800 && ncode=="d" || wcode==801 && ncode=="d" || wcode==802 && ncode=="d"){%>
+    <img src="/images/sun.png" class="icon2" alt="">
+    <%}else if(wcode==800 && ncode=="n"){%>
+    <img src="/images/moony.png" class="icon2" alt="">
+    <%}else if(wcode<299 && wcode>199){%>
+    <img src="/images/stormy.png" class="icon2" alt="">
+    <%}else if(wcode<550 && wcode>299){%>
+    <img src="/images/rainy.png" class="icon2" alt="">
+    <%}else if(wcode<699 && wcode>599){%>
+    <img src="/images/snowy.png" class="icon2" alt="">
+    <%}else if(wcode==801 && ncode=="n" || wcode==802 && ncode=="n" || wcode==803 && ncode=="n"){%>
+    <img src="/images/nightcloud.png" class="icon2" alt="">
+    <%}else if( wcode==801 && ncode=="d" || wcode==802 && ncode=="d" || wcode==803 && ncode=="d"){%>
+    <img src="/images/daycloud.png" class="icon2" alt="">
+    <%} else {%>
+      <img src="/images/cloudy.png" class="icon2" alt="">
+    <%}%>
+
+  </div>
+
+    <h1 class="place"><%=place%>, <%=country%></h1>
+  <h3 class="temp"><%=temp%>°</h3>
+  <h2 class="weather"><%=clima%></h2>
+
+  <br>
+  <h5 class="rest">Min: <%=min%>°</h5>
+  <h5 class="rest">Max: <%=max%>°</h5>
+  <h5 class="rest">Humidity: <%=humidity%>%</h5>
+  <h5 class="rest">Pressure: <%=pressure%> Hp</h5>
+  <h5 class="rest">Wind speed: <%=wind%> m/s</h5>
+  <p class="rest copywright">©Site created by Felipe Perarnau</p>
+  <img src="images/toro-logo-white.png" class="logo" alt="Toro Weather">
+
+</div>
+
+</div>
+<form  action="/failure" method="post" class="back">
+  <button class="btn btn-lg btn-warning button-retry" type="submit" name="button">Back to home</button>
+</form>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index2.js" charset="utf-8"></script>
+</body>
+
+</html>
