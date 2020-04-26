@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 const ejs = require("ejs");
 const _ = require("lodash");
 app.set('view engine', 'ejs');
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 
 app.get("/", function(req, res) {
@@ -244,6 +244,6 @@ app.post("/failure", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 3000 , function() {
   console.log("server is running on port 3000");
 });
